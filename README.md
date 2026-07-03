@@ -1,5 +1,5 @@
 # PRODIGY_WD_01
-# 🍞 Bakery Landing Page
+# 🍞 Bakery Responsive Landing Page
 
 A modern and responsive bakery landing page designed to showcase freshly baked products with an elegant and user-friendly interface. This project was built using **HTML, CSS, and JavaScript** as part of my frontend web development practice.
 
