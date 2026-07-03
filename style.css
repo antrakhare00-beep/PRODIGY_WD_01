@@ -107,7 +107,7 @@ section{
     background-color: #fff;
     
 }
-.header .search-form .active {
+.header .search-form.active {
     right: 7%;
 }
 .header .search-form input {
@@ -138,7 +138,7 @@ section{
     border: solid 1px black;
     padding: 0.8rem;
 }
-.header .cart-items-container .active{
+.header .cart-items-container.active{
     right: 0;
 }
 .header .cart-items-container .cart-item{
@@ -351,4 +351,27 @@ footer{
 }
 .footer .credits span{
     color: var(--main-color);
+}
+@media (max-width: 768px) {
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--nav-color);
+        flex-direction: column;
+        text-align: center;
+        display: none;
+    }
+    .header .navbar.active {
+        display: flex;
+    }
+    .header .navbar a {
+        display: block;
+        padding: 1.5rem;
+        font-size: 2rem;
+    }
+    .header .icons .menu-icon {
+        display: block;
+    }
 }

@@ -15,3 +15,25 @@ cartIcon.addEventListener("click", () => {
 });
 
 
+const menuIcon = document.querySelector('.menu-icon');
+const navbar = document.querySelector('.navbar');
+
+menuIcon.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+});
+
+
+const cartItemCloseIcons = document.querySelectorAll('.cart-item span');
+
+cartItemCloseIcons.forEach(icon => {
+    icon.addEventListener('click', () => {
+        icon.parentElement.remove();
+    });
+});
+
+
+document.addEventListener('click', (e) => {
+    if (!cartItemsContainer.contains(e.target) && !cartIcon.contains(e.target)) {
+        cartItemsContainer.classList.remove('active');
+    }
+});
